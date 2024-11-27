@@ -43,11 +43,6 @@ body {
     border-radius: 10px;
 }
 
-.custom-jumbotron:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .custom-card {
     border: 2px solid #dbce9e;
     border-radius: 10px;
@@ -57,6 +52,11 @@ body {
 
 .custom-card:hover {
     transform: scale(1.05);
+}
+
+/* Learned how to change the color of the SVG image for the navbar icon with help of an online tutorial (by Coding Yaar) */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219, 206, 158, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
