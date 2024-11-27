@@ -1,26 +1,27 @@
+<!-- DEVELOPER: Samuel Gonzalez Alberto, IS117-003, Fall 2024 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <title>World of Rubik's Cubes - Contact Us</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
-
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
+    <div class="container-fluid">
+        <div class="row">
             <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
+                        justify-content-start
+                        bg-custom-dark-blue
+                        col-12">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="index.html"><img src="media/navbar%20logo.png" alt="Rubik's cube image representing the logo of the website"></a>
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -30,75 +31,78 @@
                     <ul class="navbar-nav">
                         <!-- Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link bg-custom-light-yellow" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                        <!-- Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="features.html" id="navbardrop"
                                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
+                                Features
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
+                            <div class="dropdown-menu bg-custom-dark-blue">
+                                <a class="dropdown-item bg-custom-light-yellow" href="features.html">Features</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="timer.html">Timer</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="leaderboard.html">Weekly Leaderboard</a>
                             </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="about.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu bg-custom-dark-blue">
+                                <a class="dropdown-item bg-custom-light-yellow" href="about.html">About</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-history.html">Puzzle History</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-types.html">Types of Puzzles</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-tutorials.html">Puzzle Tutorials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-custom-light-yellow" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+        </div>
         <div class="container">
-          <div class="row">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname"
-                           placeholder="First name" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname"
-                           placeholder="Last name" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email"
-                           placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input"
-                               type="checkbox" name="subscribe"> Subscribe
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </row>
-</div>
+            <div class="row my-5"></div>
+            <div class="row">
+                <div class="col-3 col-sm-2"></div>
+                <form action="" class="col-6 col-sm-8">
+                    <div class="form-group mb-3">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group form-check mb-3">
+                        <label class="form-check-label text-center">
+                            <input class="form-check-input" type="checkbox" name="subscribe"> Subscribe
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div class="col-3 col-sm-2"></div>
+            </div>
         </div>
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
-        </div>
-     </div>
-  </footer>
-</div>
-
-
+        <footer class="footer page-footer font-small bg-custom-dark-blue">
+            <div class="container">
+                <div class="row">
+                       <span class="text-muted">&copy; Samuel Gonzalez Alberto, 2024 |  Terms Of Use  |  Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
+    </div>
     <!-- Javascript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
 
 </body>
 </html>

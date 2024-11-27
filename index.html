@@ -1,28 +1,29 @@
+<!-- DEVELOPER: Samuel Gonzalez Alberto, IS117-003, Fall 2024 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <title>World of Rubik's Cubes</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
-
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
+    <div class="container-fluid">
+        <div class="row">
             <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
+                        justify-content-start
+                        bg-custom-dark-blue
+                        col-12">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="index.html"><img src="media/navbar%20logo.png" alt="Rubik's cube image representing the logo of the website"></a>
                 <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
+                <button class="navbar-toggler custom-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,65 +31,106 @@
                     <ul class="navbar-nav">
                         <!-- Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link bg-custom-light-yellow" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                        <!-- Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="features.html" id="navbardrop"
                                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
+                                Features
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
+                            <div class="dropdown-menu bg-custom-dark-blue">
+                                <a class="dropdown-item bg-custom-light-yellow" href="features.html">Features</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="timer.html">Timer</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="leaderboard.html">Weekly Leaderboard</a>
                             </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="about.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu bg-custom-dark-blue">
+                                <a class="dropdown-item bg-custom-light-yellow" href="about.html">About</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-history.html">Puzzle History</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-types.html">Types of Puzzles</a>
+                                <a class="dropdown-item bg-custom-light-yellow" href="puzzle-tutorials.html">Puzzle Tutorials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-custom-light-yellow" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        <div class="row">
-        <p class="col-1">Col 1</p>
-        <p class="col-1">Col 2</p>
-        <p class="col-1">Col 3</p>
-        <p class="col-1">Col 4</p>
-        <p class="col-1">Col 5</p>
-        <p class="col-1">Col 6</p>
-        <p class="col-1">Col 7</p>
-        <p class="col-1">Col 8</p>
-        <p class="col-1">Col 9</p>
-        <p class="col-1">Col 10</p>
-        <p class="col-1">Col 11</p>
-        <p class="col-1">Col 12</p>
         </div>
-    <div class="col-sm-4  text-center">
-        <h2>h2 Bootstrap heading (24px)</h2>
-        <h3>h2 Bootstrap heading (18px)</h3>
+        <div class="row my-3">
+            <div class="col-lg col-sm"></div>
+            <div class="col-lg-8">
+                <div class="jumbotron text-center custom-jumbotron-settings">
+                    <div class="custom-container bg-element-color">
+                        <h1 class="display-4">Welcome to the World of Rubik's Cubes!</h1>
+                        <p class="lead">Unlock the secrets, master the techniques, and dive into the fascinating world of Rubik's Cubes.</p>
+                        <hr class="my-4">
+                        <p>Whether you're a beginner or an experienced solver, we have everything you need to improve your skills and join a vibrant community of cube enthusiasts.</p>
+                        <a class="btn btn-primary btn-lg mb-3" href="puzzle-tutorials.html" role="button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm"></div>
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm">
+                            <div class="custom-card bg-element-color">
+                                <img class="card-img-top" src="media/3x3%20cube.png" data-toggle="tooltip" title="image of a 3x3 cube" alt="image of a 3x3 cube">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Rubik's Cube!</h5>
+                                    <p class="card-text">How much can you learn about a toy the size of your hand? You'd be surprised!</p>
+                                    <a href="puzzle-history.html" class="btn btn-primary">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm">
+                            <div class="custom-card bg-element-color">
+                                <img class="card-img-top" src="media/stopwatch.png" data-toggle="tooltip" title="image of a timer with a person solving a puzzle behind it" alt="image of a timer with a person solving a puzzle behind it">
+                                <div class="card-body">
+                                    <h5 class="card-title">Use Our Stopwatch!</h5>
+                                    <p class="card-text">Up for a challenge? Test your speed solving skills with our built-in stopwatch!</p>
+                                    <a href="timer.html" class="btn btn-primary">Use stopwatch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm">
+                            <div class="custom-card bg-element-color">
+                                <img class="card-img-top" src="media/puzzle-types.png" data-toggle="tooltip" title="image of a variety of cubes of different shapes, sizes, and colors" alt="image of a variety of cubes of different shapes, sizes, and colors">
+                                <div class="card-body">
+                                    <h5 class="card-title">Check Out Different Cubes!</h5>
+                                    <p class="card-text">Take a look at our catalog of diverse cubes and learn more about each type for yourself!</p>
+                                    <a href="puzzle-types.html" class="btn btn-primary">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <footer class="footer page-footer font-small bg-custom-dark-blue">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; Samuel Gonzalez Alberto, 2024 |  Terms Of Use  |  Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
-        </div>
-     </div>
-  </footer>
-</div>
-
 
     <!-- Javascript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>

@@ -1,10 +1,109 @@
+<!-- DEVELOPER: Samuel Gonzalez Alberto, IS117-003, Fall 2024 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>World of Rubik's Cubes - Features</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                        justify-content-start
+                        bg-custom-dark-blue
+                        col-12">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="media/navbar%20logo.png" alt="Rubik's cube image representing the logo of the website"></a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link bg-custom-light-yellow" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="features.html" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu bg-custom-dark-blue">
+                            <a class="dropdown-item bg-custom-light-yellow" href="features.html">Features</a>
+                            <a class="dropdown-item bg-custom-light-yellow" href="timer.html">Timer</a>
+                            <a class="dropdown-item bg-custom-light-yellow" href="leaderboard.html">Weekly Leaderboard</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="about.html" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu bg-custom-dark-blue">
+                            <a class="dropdown-item bg-custom-light-yellow" href="about.html">About</a>
+                            <a class="dropdown-item bg-custom-light-yellow" href="puzzle-history.html">Puzzle History</a>
+                            <a class="dropdown-item bg-custom-light-yellow" href="puzzle-types.html">Types of Puzzles</a>
+                            <a class="dropdown-item bg-custom-light-yellow" href="puzzle-tutorials.html">Puzzle Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-custom-light-yellow" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <h1 class="text-center">Website Features</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-10">
+                <h2>Timer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu laoreet lacus. Cras faucibus risus at nunc ornare, auctor condimentum nunc vulputate. Etiam commodo neque id lectus placerat, ut suscipit neque eleifend. Quisque nec leo tempor, vestibulum lectus id, bibendum lacus. Nam porta malesuada elementum. Maecenas eget ullamcorper neque. Maecenas porttitor, arcu at mattis congue, nunc purus porttitor est, et suscipit ipsum urna sit amet arcu. Sed faucibus ligula condimentum purus vehicula ornare. Suspendisse at pulvinar diam, nec semper quam. Donec sollicitudin, velit at pellentesque convallis, odio elit vehicula arcu, posuere bibendum elit lectus vitae odio. Nulla id sapien lobortis, mollis mi nec, convallis est. Vivamus a eleifend sapien. Nam sodales ornare sagittis.</p>
+
+                <p>Sed quis suscipit leo, vitae vestibulum arcu. Phasellus dignissim et quam sed tempus. Aenean eget lorem justo. Curabitur non risus purus. Quisque id elementum lectus. Fusce et lobortis tellus, at facilisis est. Nulla ut varius quam. Phasellus nibh elit, tempor non congue id, efficitur quis orci. Etiam pulvinar purus sit amet nisi gravida tristique. Cras id felis sapien. Donec tempus turpis ut semper faucibus.</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-10">
+                <h2>Competitive Leaderboard</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat ante, placerat quis sapien vel, ullamcorper congue magna. Quisque ac quam finibus, hendrerit massa id, vestibulum metus. Vivamus a gravida tellus, nec lobortis dolor. Suspendisse non cursus tellus. Phasellus tempus lorem at lorem aliquet tempor. Cras molestie interdum augue sed varius. Vestibulum rutrum ultrices felis, quis pharetra enim. Aenean vehicula dictum dui sed porttitor.</p>
+
+                <p>Mauris pellentesque erat vitae vehicula dictum. Nam tempor dapibus nibh eu facilisis. Vestibulum laoreet purus id risus maximus, vitae viverra felis tristique. Duis luctus libero quis est rutrum facilisis. Suspendisse ullamcorper mauris justo, nec sodales metus consequat vitae. Sed dictum mauris eget efficitur malesuada. Vivamus ac ornare massa. Suspendisse molestie quam vitae ipsum mattis, sed pellentesque risus gravida. Aenean mattis imperdiet justo, rhoncus ullamcorper urna gravida at. Cras sed purus sed massa sagittis iaculis vel elementum dolor.</p>
+            </div>
+        </div>
+    <footer class="footer page-footer font-small bg-custom-dark-blue">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Samuel Gonzalez Alberto, 2024 |    Terms Of Use    |    Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
 </body>
 </html>

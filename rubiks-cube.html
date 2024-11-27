@@ -5,24 +5,24 @@
 <head>
   <meta charset="UTF-8">
   <title>The Rubik's Cube</title>
-  <link rel="icon" type="image/png" href="../media/favicon.png">
+  <link rel="icon" type="image/png" href="media/favicon.png">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous">
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
 </head>
 <body>
 <div class="container-fluid">
   <div class="row">
     <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+                        justify-content-start
+                        bg-custom-dark-blue
+                        col-12">
       <!-- Brand -->
-      <a class="navbar-brand" href="../index.html"><img src="../media/navbar%20logo.png" alt="Rubik's cube image representing the logo of the website"></a>
+      <a class="navbar-brand" href="index.html"><img src="media/navbar%20logo.png" alt="Rubik's cube image representing the logo of the website"></a>
       <!-- Responsive Button for the smaller menu -->
       <button class="navbar-toggler" type="button"
               data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -32,33 +32,33 @@
         <ul class="navbar-nav">
           <!-- Links -->
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link bg-custom-light-yellow" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../features.html" id="navbardrop"
+            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="features.html" id="navbardrop"
                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Features
             </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="../features.html">Features</a>
-              <a class="dropdown-item" href="../timer.html">Timer</a>
-              <a class="dropdown-item" href="../leaderboard.html">Weekly Leaderboard</a>
+            <div class="dropdown-menu bg-custom-dark-blue">
+              <a class="dropdown-item bg-custom-light-yellow" href="features.html">Features</a>
+              <a class="dropdown-item bg-custom-light-yellow" href="timer.html">Timer</a>
+              <a class="dropdown-item bg-custom-light-yellow" href="leaderboard.html">Weekly Leaderboard</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../about.html" id="navbardrop"
+            <a class="nav-link dropdown-toggle bg-custom-light-yellow" href="about.html" id="navbardrop"
                data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               About
             </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="../about.html">About</a>
-              <a class="dropdown-item" href="../puzzle-history.html">Puzzle History</a>
-              <a class="dropdown-item" href="../puzzle-types.html">Types of Puzzles</a>
-              <a class="dropdown-item" href="../puzzle-tutorials.html">Puzzle Tutorials</a>
+            <div class="dropdown-menu bg-custom-dark-blue">
+              <a class="dropdown-item bg-custom-light-yellow" href="about.html">About</a>
+              <a class="dropdown-item bg-custom-light-yellow" href="puzzle-history.html">Puzzle History</a>
+              <a class="dropdown-item bg-custom-light-yellow" href="puzzle-types.html">Types of Puzzles</a>
+              <a class="dropdown-item bg-custom-light-yellow" href="puzzle-tutorials.html">Puzzle Tutorials</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../contact.html">Contact</a>
+            <a class="nav-link bg-custom-light-yellow" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -66,44 +66,31 @@
   </div>
   <div class="container">
     <div class="row mt-3">
-      <div class="col-3"></div>
-      <div class="col-7">
-        <h1>The Rubik's Cube</h1>
+      <div class="col-lg-2 col-md-1"></div>
+      <div class="col-lg-8 col-md-10 col-sm-12">
+        <h1 class="text-center">The Rubik's Cube</h1>
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-1"></div>
-      <div class="col-2">
-        <img src="../media/3x3%20cube.png" class="col-12" alt="image of a 3x3 cube">
+      <div class="col-lg-2 col-md-2 col-sm-1">
+        <img src="media/logo.png" class="img-fluid d-md-block d-lg-block d-none" data-toggle="tooltip" title="image of a 3x3 cube" alt="image of a 3x3 cube">
       </div>
-      <div class="col-7">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis porta ligula quis tempor. Proin purus mauris, fringilla in interdum eget, aliquam vitae ex. Nullam bibendum sagittis tristique. Morbi ut bibendum mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque non justo ac mattis. Proin elit felis, hendrerit vitae sem sed, lacinia bibendum sapien. Fusce posuere convallis bibendum. Nunc condimentum, ex at sagittis posuere, orci risus congue magna, vitae dapibus metus metus nec quam. Aliquam scelerisque nisi sit amet dolor tristique eleifend. Cras vel porttitor odio, sit amet tempus odio. Proin ac iaculis purus.</p>
+      <div class="col-lg-8 col-md-8 col-sm-10">
+        <ol>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat mauris. Sed at nisl a nunc facilisis facilisis. Morbi egestas nibh in ex mollis, vitae efficitur nisl porttitor. Nullam sit amet lacus a eros venenatis porta. Donec sagittis nisl vel lacus vehicula, non dictum ex scelerisque. Curabitur at fringilla nisl, ac aliquam odio. Etiam euismod felis a ligula facilisis vehicula. Fusce nec gravida nulla, eu dictum ligula. Morbi bibendum tincidunt odio, sit amet porttitor nisi dignissim vitae. Integer pharetra ligula id magna fermentum, sit amet hendrerit dolor condimentum.</p>
 
-        <p>Donec massa augue, congue et tortor nec, facilisis condimentum sapien. Nulla ultricies sed magna non viverra. Nullam non dui id mauris dictum efficitur. Quisque in metus dolor. Nunc a hendrerit turpis, vitae tempus erat. In turpis metus, tempor sed tristique et, venenatis ut augue. Vivamus in sapien urna. Curabitur et tellus et diam faucibus lobortis nec id metus. Aenean ac nibh dapibus velit ultrices interdum. Nam commodo, nibh vel auctor maximus, arcu sapien laoreet turpis, ac egestas leo tellus a purus. Nulla vel vulputate justo, ac pulvinar orci. Maecenas vitae erat quis velit lobortis porta. Aliquam nec suscipit nunc, sit amet tincidunt dui. Nulla vel suscipit mauris. Duis auctor, diam at vestibulum fringilla, dui mauris tempus neque, eu cursus sapien urna ac libero.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus tincidunt lacus a mi convallis, sed fermentum ipsum convallis. Suspendisse tristique, nunc in placerat fermentum, mi arcu egestas eros, a convallis metus ex vel enim. Aliquam tempus ullamcorper ex, sit amet molestie neque lobortis non. Etiam a tincidunt erat, at facilisis libero. Curabitur vitae velit sed nunc tincidunt dignissim nec a tortor. Quisque at scelerisque sapien, sit amet iaculis purus. Sed interdum, risus vel consectetur aliquet, urna elit gravida nisi, et faucibus orci purus sit amet purus. Integer eu tristique est. Praesent vitae lectus nec odio sodales accumsan. Pellentesque eget ultricies ligula. Integer rutrum, lectus nec ultricies luctus, leo libero varius nulla, sed fermentum dolor odio nec lacus. Aliquam nec interdum lectus. Nulla facilisi. Suspendisse potenti.</p>
 
-        <p>Nam non diam dapibus, fermentum justo vel, euismod lorem. Sed venenatis vulputate fringilla. Etiam mi ipsum, condimentum vel ipsum at, laoreet maximus leo. Pellentesque bibendum sem in sapien tristique porta. Curabitur suscipit lacus at augue posuere, sit amet efficitur risus sagittis. Aliquam tincidunt molestie felis eget ultricies. Aliquam sed velit erat. Praesent nec imperdiet odio, et aliquam turpis. Quisque aliquam gravida eleifend. Etiam id elit nec quam congue malesuada ac et odio.</p>
+          <p>Vestibulum aliquet condimentum odio ac rhoncus. Suspendisse non arcu in turpis sollicitudin dictum. Sed et nunc a libero tincidunt porttitor nec eget neque. Donec pharetra, magna et luctus ullamcorper, arcu ante laoreet libero, at cursus ex nisl id libero. Integer ut turpis in quam fermentum posuere. Integer a purus ut quam tincidunt fermentum. Morbi laoreet condimentum magna in consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer finibus, justo a scelerisque posuere, nisl erat accumsan dui, eu blandit orci turpis id lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel augue sit amet orci scelerisque sodales. Phasellus vitae felis tincidunt, lobortis leo vel, fringilla felis.</p>
 
-        <p>Phasellus ac luctus metus, at venenatis nisi. In ullamcorper nisl a tincidunt viverra. Duis efficitur blandit consequat. Nulla ornare bibendum ex, non vestibulum sem ornare et. Suspendisse eu nisi pharetra, congue lectus vitae, maximus tortor. Vivamus interdum vulputate nisi, quis egestas risus ornare vel. Etiam ut purus vel quam mollis rutrum nec eu magna. Sed eget arcu luctus, consectetur justo ut, sagittis orci. Donec tincidunt maximus mauris et vulputate. Vivamus pellentesque bibendum maximus. Aliquam egestas, sem suscipit ullamcorper tempus, ante dolor dapibus ante, at facilisis dui ligula ac lacus. Morbi volutpat, est quis hendrerit accumsan, nulla enim dapibus lorem, quis lobortis nisl leo nec nibh. Aliquam erat volutpat.</p>
+          <p>Suspendisse potenti. Donec vel metus non est condimentum fermentum at nec leo. Sed malesuada nisi ac eros efficitur, vitae porttitor augue placerat. Nullam fringilla laoreet ligula, ac dapibus lectus bibendum nec. Proin id dolor at sapien sollicitudin tempor in id orci. Nam eu nisi a neque pellentesque scelerisque. Praesent interdum cursus mi, non interdum dolor ultrices non. Donec euismod enim vitae orci malesuada, non fermentum quam pharetra. Nullam vel purus suscipit, facilisis quam a, lacinia magna. Donec sed est felis. Proin vulputate felis ut neque suscipit, ac lacinia orci venenatis.</p>
 
-        <p>Aliquam mauris ex, lobortis sit amet velit a, lobortis sollicitudin magna. Praesent fermentum nunc nec nisl tempor, non tincidunt quam pellentesque. Mauris ac sem a massa vulputate accumsan et nec velit. Nunc non elementum orci. Curabitur viverra nulla vel sollicitudin dictum. Donec dui magna, tempor ac lorem ac, congue molestie mi. Nulla vel mauris et est porta iaculis id at lacus. Ut a dictum sem. Donec bibendum eros tellus, eget volutpat libero viverra nec. Vestibulum urna ex, auctor quis condimentum sit amet, lobortis et augue. Nullam sit amet dignissim orci, quis suscipit odio. Ut eleifend lectus sit amet velit tempus, in efficitur tellus scelerisque. Nulla ut maximus eros, vel rutrum ipsum. Mauris commodo, augue non vestibulum ultricies, mauris leo auctor purus, eget euismod justo libero ut velit. Vivamus eget ante fermentum, volutpat purus nec, lobortis massa.</p>
-
-        <p>Duis congue diam in rhoncus finibus. Curabitur at ex in ligula imperdiet consectetur. Sed faucibus nisl interdum felis aliquam, et interdum dolor vulputate. Pellentesque gravida neque purus, id pretium nulla sodales mollis. Donec sapien nunc, hendrerit eu convallis a, aliquam vitae dolor. Maecenas rutrum nibh ut risus vehicula blandit. Donec dapibus tortor eu felis cursus, non pretium enim consectetur. Phasellus dapibus efficitur lorem in auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam mattis vestibulum congue.</p>
-
-        <p>Nullam tincidunt egestas malesuada. Sed luctus tellus eget arcu vestibulum, eu sagittis magna rutrum. Praesent tempor lobortis vestibulum. Curabitur fringilla ipsum tincidunt massa cursus, a laoreet risus eleifend. Quisque imperdiet mi at porttitor pretium. Duis vehicula, ante malesuada dictum dapibus, odio purus mollis libero, a condimentum nulla sem a turpis. Cras ligula magna, maximus non risus vel, hendrerit convallis felis. Aliquam a arcu pharetra, dignissim nisi ut, luctus libero. Suspendisse iaculis, lacus et consectetur tincidunt, mauris turpis faucibus turpis, et hendrerit enim est eget ex. Suspendisse fringilla elit dui, quis dignissim est pellentesque ac. Nulla semper odio mi.</p>
-
-        <p>Fusce libero tortor, dictum a orci sed, porta pretium ligula. Aliquam euismod mollis eros, a iaculis augue ultrices sit amet. Praesent laoreet varius magna. Vestibulum porttitor venenatis efficitur. Nullam scelerisque elementum nisi, quis aliquam velit tempus id. Suspendisse non euismod leo, at ultricies neque. Cras tortor diam, consectetur a suscipit eget, vestibulum quis dolor. Ut quis enim vel nisl dapibus rutrum. Aliquam ut dictum lacus. Curabitur non nunc urna. Curabitur malesuada sed ante eu elementum. Suspendisse ligula quam, bibendum et ultricies ut, gravida eget lorem. Phasellus ac congue nulla.</p>
-
-        <p>Mauris quis pretium tellus. In vitae elit sed nulla lacinia iaculis. Nunc eleifend egestas arcu in suscipit. Nam velit lacus, pellentesque vel scelerisque ut, malesuada a tortor. Pellentesque sed elit sed erat vehicula faucibus. Proin mollis, ligula et scelerisque ornare, tortor metus laoreet sapien, ut pharetra diam diam et mi. Nam auctor tempus sapien, vitae tincidunt tellus semper non. Cras sollicitudin velit neque, nec ultrices justo laoreet eu. Integer eu sem interdum justo dignissim feugiat at ac dui. Vivamus metus dui, scelerisque eu diam interdum, tincidunt faucibus purus. Donec gravida porttitor enim. Phasellus eget porttitor sem. In mollis, arcu at fermentum fringilla, justo leo lacinia sapien, eget auctor eros nisi nec felis. Fusce tristique blandit malesuada.</p>
-
-        <p>Phasellus accumsan enim sit amet erat faucibus tempus. Suspendisse potenti. Suspendisse aliquam erat a congue luctus. Nulla sit amet nibh convallis, consequat enim non, semper massa. Nulla facilisi. Curabitur scelerisque lectus in nulla tincidunt lacinia. Vivamus ut euismod sapien, id condimentum quam. Ut faucibus ornare ex facilisis hendrerit. Duis sit amet tortor interdum, congue urna ut, pretium sapien. Sed at mauris diam. Phasellus nulla purus, facilisis condimentum dui a, porta lobortis ex. Maecenas aliquet elit et orci aliquam, eget fermentum lacus accumsan. Ut condimentum massa vel mollis hendrerit. Phasellus varius lorem lorem, quis molestie nunc molestie a. Cras quis lacus sit amet ipsum pretium hendrerit.</p>
-
-        <p>Ut sodales tellus at augue sollicitudin consectetur. Nam sed vulputate nibh. In sagittis dui erat, eget vehicula lorem commodo ut. Mauris vel augue in dolor cursus pulvinar ac at enim. Duis suscipit neque eget lectus molestie interdum. Sed semper lacinia commodo. Etiam magna sem, viverra ut lectus nec, euismod finibus quam. Proin congue velit id tellus euismod porttitor. Sed rhoncus felis ut enim consectetur, vitae aliquet sem tempor. In ut nisi metus. Quisque tristique porta ultricies. Suspendisse sollicitudin, elit sit amet interdum rhoncus, sapien massa tempus justo, sit amet euismod felis metus sed risus. Quisque pretium eu purus in pretium. Phasellus ullamcorper nisi sed pellentesque mollis. Morbi a ipsum maximus felis dictum imperdiet. Quisque elementum et nisl sollicitudin tempor.</p>
-
-        <p>Cras sit amet iaculis augue. Duis vel risus at enim bibendum iaculis sit amet malesuada velit. Nulla laoreet mi in sapien ultricies, eu faucibus urna congue. Etiam eu turpis et massa scelerisque mattis eu vel leo. Nam tellus velit, porta quis rhoncus sed, condimentum quis lorem. Morbi magna urna, maximus ac massa quis, luctus imperdiet neque. Nullam maximus congue neque, et ornare leo accumsan vel. Suspendisse arcu sapien, elementum vitae laoreet quis, pellentesque vel nibh. Fusce posuere egestas risus in posuere. Suspendisse vel egestas ligula, et cursus velit.</p>
+          <p>Mauris id feugiat odio. Aliquam erat volutpat. Duis id sagittis magna. Vestibulum varius gravida dolor, a mollis nulla rutrum quis. Nulla gravida gravida lectus ut mollis. Sed pellentesque metus at vestibulum placerat. Curabitur gravida orci nec nibh blandit, vel suscipit mauris ornare. Nam fermentum elit eget risus convallis, non vestibulum eros sodales.</p>
+        </ol>
       </div>
     </div>
   </div>
-  <footer class="footer page-footer font-small">
+  <footer class="footer page-footer font-small bg-custom-dark-blue">
     <div class="container">
       <div class="row">
         <span class="text-muted">&copy; Samuel Gonzalez Alberto, 2024 |  Terms Of Use  |  Privacy Statement</span>

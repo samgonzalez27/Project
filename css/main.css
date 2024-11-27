@@ -9,3 +9,56 @@
     padding: 10px;
     font-size: 0.5rem;
 }
+
+/*DEVELOPER: Samuel Gonzalez Alberto, IS117-003, Fall, 2024 */
+body {
+    background-color: #dbce9e;
+}
+
+.bg-custom-dark-blue {
+    background-color: #001F3F;
+}
+
+.bg-custom-light-yellow {
+    color: #dbce9e;
+}
+
+.bg-element-color {
+    background-color: #d9c786
+}
+
+.custom-jumbotron-settings {
+    border: 5px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bg-element-color {
+    background-color: #dbce9e;
+}
+
+.custom-container {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.custom-jumbotron:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card {
+    border: 2px solid #dbce9e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgba(219, 206, 158, 0.75);
+}
